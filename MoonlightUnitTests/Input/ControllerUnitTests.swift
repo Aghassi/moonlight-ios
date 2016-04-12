@@ -16,32 +16,17 @@ class ControllerUnitTests: XCTestCase {
   var controllerUnderTest: Controller!
   
   override func setUp() {
+    super.setUp()
     controllerUnderTest = Controller()
     XCTAssertNotNil(controllerUnderTest, "controllerUnderTest is nil, and should not be for this test. See line \(#line) \n")
   }
   
   override func tearDown() {
-    resetAllValues()
+    super.tearDown()
   }
   
   
-  // MARK: Helper Methods
-  /**
-   Sets all the values of `controllerUnderTest` to `0`
-   */
-  func resetAllValues() {
-    controllerUnderTest.emulatingButtonFlags = CInt(0)
-    controllerUnderTest.lastButtonFlags = CInt(0)
-    
-    controllerUnderTest.lastLeftStickX = CShort(0)
-    controllerUnderTest.lastLeftStickY = CShort(0)
-    controllerUnderTest.lastRightStickX = CShort(0)
-    controllerUnderTest.lastRightStickY = CShort(0)
-    
-    controllerUnderTest.lastLeftTrigger = CChar(0)
-    controllerUnderTest.lastRightTrigger = CChar(0)
-  }
-  
+  // MARK: Helper Methods  
   /**
    Displays "*name* failed to set CInt correctly." Shows expected and actual, as well as failure line.
    

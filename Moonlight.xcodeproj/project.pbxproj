@@ -19,8 +19,10 @@
 		9E5D60161A5A5A3900689918 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E5D60031A5A5A3900689918 /* Roboto-Thin.ttf */; };
 		D43E02081CBC9F1A00A30D30 /* Settings+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E02061CBC9F1A00A30D30 /* Settings+CoreDataProperties.swift */; };
 		D43E02091CBC9F1A00A30D30 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E02071CBC9F1A00A30D30 /* Settings.swift */; };
+		D45364A91CBD253A0017A189 /* TemporarySettingsUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45364A81CBD253A0017A189 /* TemporarySettingsUnitTest.swift */; };
 		D46A73AD1CBC7D090039F1EE /* ControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46A73AC1CBC7D090039F1EE /* ControllerUnitTests.swift */; };
 		D4746EEC1CBC740C006FB401 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4746EEB1CBC740C006FB401 /* Controller.swift */; };
+		D47C79311CBD706600471738 /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C79301CBD706600471738 /* CoreDataHelpers.swift */; };
 		D4E457531CBD17F4005572BD /* App+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E457511CBD17F4005572BD /* App+CoreDataProperties.swift */; };
 		D4E457541CBD17F4005572BD /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E457521CBD17F4005572BD /* App.swift */; };
 		D4E457571CBD186B005572BD /* Host+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E457551CBD186B005572BD /* Host+CoreDataProperties.swift */; };
@@ -122,12 +124,14 @@
 		9E5D60031A5A5A3900689918 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		D43E02061CBC9F1A00A30D30 /* Settings+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Settings+CoreDataProperties.swift"; path = "Database/Settings+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D43E02071CBC9F1A00A30D30 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = Database/Settings.swift; sourceTree = "<group>"; };
+		D45364A81CBD253A0017A189 /* TemporarySettingsUnitTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TemporarySettingsUnitTest.swift; path = Database/TemporarySettingsUnitTest.swift; sourceTree = "<group>"; };
 		D46A73A01CBC7CB60039F1EE /* MoonlightUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoonlightUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46A73A41CBC7CB60039F1EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D46A73AB1CBC7D080039F1EE /* MoonlightUnitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoonlightUnitTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		D46A73AC1CBC7D090039F1EE /* ControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControllerUnitTests.swift; path = Input/ControllerUnitTests.swift; sourceTree = "<group>"; };
 		D4746EEA1CBC740C006FB401 /* Moonlight-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Moonlight-Bridging-Header.h"; path = "Input/Moonlight-Bridging-Header.h"; sourceTree = "<group>"; };
 		D4746EEB1CBC740C006FB401 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		D47C79301CBD706600471738 /* CoreDataHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataHelpers.swift; path = Helpers/CoreDataHelpers.swift; sourceTree = "<group>"; };
 		D4E457511CBD17F4005572BD /* App+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "App+CoreDataProperties.swift"; path = "Database/App+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D4E457521CBD17F4005572BD /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App.swift; path = Database/App.swift; sourceTree = "<group>"; };
 		D4E457551CBD186B005572BD /* Host+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Host+CoreDataProperties.swift"; path = "Database/Host+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -375,11 +379,21 @@
 			path = Roboto;
 			sourceTree = "<group>";
 		};
+		D45364A71CBD25200017A189 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				D45364A81CBD253A0017A189 /* TemporarySettingsUnitTest.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
 		D46A73A11CBC7CB60039F1EE /* MoonlightUnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				D47C792F1CBD705600471738 /* Helpers */,
 				D46A73AB1CBC7D080039F1EE /* MoonlightUnitTests-Bridging-Header.h */,
 				D46A73AA1CBC7CEF0039F1EE /* Input */,
+				D45364A71CBD25200017A189 /* Database */,
 				D46A73A41CBC7CB60039F1EE /* Info.plist */,
 			);
 			path = MoonlightUnitTests;
@@ -391,6 +405,14 @@
 				D46A73AC1CBC7D090039F1EE /* ControllerUnitTests.swift */,
 			);
 			name = Input;
+			sourceTree = "<group>";
+		};
+		D47C792F1CBD705600471738 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D47C79301CBD706600471738 /* CoreDataHelpers.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		FB290CE519B2C406004C83CF = {
@@ -910,6 +932,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D47C79311CBD706600471738 /* CoreDataHelpers.swift in Sources */,
+				D45364A91CBD253A0017A189 /* TemporarySettingsUnitTest.swift in Sources */,
 				D46A73AD1CBC7D090039F1EE /* ControllerUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

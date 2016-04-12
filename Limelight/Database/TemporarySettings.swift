@@ -11,7 +11,7 @@ import CoreData
 
 @objc
 protocol TempSettings {
-  var parent: Settings { get set }
+  var parent: Settings! { get set }
   
   var bitrate: NSNumber { get set }
   var framerate: NSNumber { get set }
@@ -26,7 +26,7 @@ protocol TempSettings {
 @objc
 class TemporarySettings: NSObject, TempSettings {
   // Swift requires defaults to be initialized
-  var parent: Settings = Settings()
+  var parent: Settings!           // We must always have a parent setting, hence not optional
   var bitrate: NSNumber = 0.0
   var framerate: NSNumber = 0.0
   var height: NSNumber = 0.0
