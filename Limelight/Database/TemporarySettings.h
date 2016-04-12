@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Settings.h"
+
+// Swift
+#import "Moonlight-Swift.h"
+@class Settings;
 
 @interface TemporarySettings : NSObject
 
