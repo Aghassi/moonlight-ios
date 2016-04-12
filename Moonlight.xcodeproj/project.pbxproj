@@ -26,6 +26,7 @@
 		D4E457541CBD17F4005572BD /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E457521CBD17F4005572BD /* App.swift */; };
 		D4E457571CBD186B005572BD /* Host+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E457551CBD186B005572BD /* Host+CoreDataProperties.swift */; };
 		D4E457581CBD186B005572BD /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E457561CBD186B005572BD /* Host.swift */; };
+		D4E4575A1CBD1BE8005572BD /* TemporarySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E457591CBD1BE8005572BD /* TemporarySettings.swift */; };
 		FB1D59971BBCCB6400F482CA /* ComputerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1D59961BBCCB6400F482CA /* ComputerScrollView.m */; };
 		FB1D599A1BBCCD7E00F482CA /* AppCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1D59991BBCCD7E00F482CA /* AppCollectionView.m */; };
 		FB290CF219B2C406004C83CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB290CF119B2C406004C83CF /* Foundation.framework */; };
@@ -134,6 +135,7 @@
 		D4E457521CBD17F4005572BD /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App.swift; path = Database/App.swift; sourceTree = "<group>"; };
 		D4E457551CBD186B005572BD /* Host+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Host+CoreDataProperties.swift"; path = "Database/Host+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D4E457561CBD186B005572BD /* Host.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Host.swift; path = Database/Host.swift; sourceTree = "<group>"; };
+		D4E457591CBD1BE8005572BD /* TemporarySettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TemporarySettings.swift; path = Database/TemporarySettings.swift; sourceTree = "<group>"; };
 		FB1D59951BBCCB6400F482CA /* ComputerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputerScrollView.h; sourceTree = "<group>"; };
 		FB1D59961BBCCB6400F482CA /* ComputerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputerScrollView.m; sourceTree = "<group>"; };
 		FB1D59981BBCCD7E00F482CA /* AppCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCollectionView.h; sourceTree = "<group>"; };
@@ -780,6 +782,7 @@
 				9832D1351BBCD5C50036EF48 /* TemporaryApp.m */,
 				98D5856B1C0EA79600F6CC00 /* TemporaryHost.h */,
 				98D5856C1C0EA79600F6CC00 /* TemporaryHost.m */,
+				D4E457591CBD1BE8005572BD /* TemporarySettings.swift */,
 				98D5856E1C0ED0E800F6CC00 /* TemporarySettings.h */,
 				98D5856F1C0ED0E800F6CC00 /* TemporarySettings.m */,
 			);
@@ -920,6 +923,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4E4575A1CBD1BE8005572BD /* TemporarySettings.swift in Sources */,
 				FB290D0719B2C406004C83CF /* Limelight.xcdatamodeld in Sources */,
 				FB89463219F646E200339C8A /* VideoDecoderRenderer.m in Sources */,
 				FB290D0419B2C406004C83CF /* AppDelegate.m in Sources */,
