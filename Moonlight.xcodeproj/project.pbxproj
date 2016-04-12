@@ -390,8 +390,8 @@
 		D46A73A11CBC7CB60039F1EE /* MoonlightUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				D47C792F1CBD705600471738 /* Helpers */,
 				D46A73AB1CBC7D080039F1EE /* MoonlightUnitTests-Bridging-Header.h */,
+				D47C792F1CBD705600471738 /* Helpers */,
 				D46A73AA1CBC7CEF0039F1EE /* Input */,
 				D45364A71CBD25200017A189 /* Database */,
 				D46A73A41CBC7CB60039F1EE /* Info.plist */,

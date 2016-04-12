@@ -51,4 +51,16 @@ class TemporarySettingsUnitTest: XCTestCase {
     let returnObject = temporarySettingsUnderTest.initFromSettings(testSettings)
     XCTAssertTrue(returnObject.dynamicType == TemporarySettings.self, "initFromSettings did not return TemporarySettings \n. Expected: \(TemporarySettings.self) \n, Actual: \(returnObject.dynamicType) \n")
   }
+  
+  func test_Assert_initFromSettings_Assigns_Parent() {
+    let returnObject = temporarySettingsUnderTest.initFromSettings(testSettings) as! TemporarySettings
+    XCTAssertNotNil(returnObject.parent, "Parent should have been set, parent should never be nil. Please see line \(#line) \n")
+    XCTAssertTrue(returnObject.parent == testSettings, "Parent should be the same as the parent passed in. Please see line \(#line) \n")
+  }
+  
+  func test_Assert_initFromSettings_Assigns_Bitrate() {
+    let returnObject = temporarySettingsUnderTest.initFromSettings(testSettings) as! TemporarySettings
+    XCTAssertNotNil(returnObject.bitrate, "Bitrate should have been set and should not be nil. Please see line \(#line) \n")
+    XCTAssertTrue(returnObject.bitrate == testSettings.bitrate, "Bitrate should equal the original passed in by the settings. Please see line \(#line) \n.")
+  }
 }
