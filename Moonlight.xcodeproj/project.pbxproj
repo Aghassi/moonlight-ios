@@ -22,6 +22,10 @@
 		D43E02091CBC9F1A00A30D30 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E02071CBC9F1A00A30D30 /* Settings.swift */; };
 		D46A73AD1CBC7D090039F1EE /* ControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46A73AC1CBC7D090039F1EE /* ControllerUnitTests.swift */; };
 		D4746EEC1CBC740C006FB401 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4746EEB1CBC740C006FB401 /* Controller.swift */; };
+		D4E457531CBD17F4005572BD /* App+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E457511CBD17F4005572BD /* App+CoreDataProperties.swift */; };
+		D4E457541CBD17F4005572BD /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E457521CBD17F4005572BD /* App.swift */; };
+		D4E457571CBD186B005572BD /* Host+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E457551CBD186B005572BD /* Host+CoreDataProperties.swift */; };
+		D4E457581CBD186B005572BD /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E457561CBD186B005572BD /* Host.swift */; };
 		FB1D59971BBCCB6400F482CA /* ComputerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1D59961BBCCB6400F482CA /* ComputerScrollView.m */; };
 		FB1D599A1BBCCD7E00F482CA /* AppCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1D59991BBCCD7E00F482CA /* AppCollectionView.m */; };
 		FB290CF219B2C406004C83CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB290CF119B2C406004C83CF /* Foundation.framework */; };
@@ -77,8 +81,6 @@
 		FBD349621A0089F6002D2A60 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD349611A0089F6002D2A60 /* DataManager.m */; };
 		FBDE86E019F7A837001C18A8 /* UIComputerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDE86DF19F7A837001C18A8 /* UIComputerView.m */; };
 		FBDE86E619F82297001C18A8 /* UIAppView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDE86E519F82297001C18A8 /* UIAppView.m */; };
-		FBFCB3311B50B29400089F8A /* Host.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFCB3301B50B29400089F8A /* Host.m */; };
-		FBFCB3351B50B29400089F8A /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFCB3341B50B29400089F8A /* App.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +130,10 @@
 		D46A73AC1CBC7D090039F1EE /* ControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControllerUnitTests.swift; path = Input/ControllerUnitTests.swift; sourceTree = "<group>"; };
 		D4746EEA1CBC740C006FB401 /* Moonlight-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Moonlight-Bridging-Header.h"; path = "Input/Moonlight-Bridging-Header.h"; sourceTree = "<group>"; };
 		D4746EEB1CBC740C006FB401 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		D4E457511CBD17F4005572BD /* App+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "App+CoreDataProperties.swift"; path = "Database/App+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D4E457521CBD17F4005572BD /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App.swift; path = Database/App.swift; sourceTree = "<group>"; };
+		D4E457551CBD186B005572BD /* Host+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Host+CoreDataProperties.swift"; path = "Database/Host+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D4E457561CBD186B005572BD /* Host.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Host.swift; path = Database/Host.swift; sourceTree = "<group>"; };
 		FB1D59951BBCCB6400F482CA /* ComputerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputerScrollView.h; sourceTree = "<group>"; };
 		FB1D59961BBCCB6400F482CA /* ComputerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputerScrollView.m; sourceTree = "<group>"; };
 		FB1D59981BBCCD7E00F482CA /* AppCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCollectionView.h; sourceTree = "<group>"; };
@@ -307,12 +313,6 @@
 		FBDE86DF19F7A837001C18A8 /* UIComputerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIComputerView.m; sourceTree = "<group>"; };
 		FBDE86E419F82297001C18A8 /* UIAppView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAppView.h; sourceTree = "<group>"; };
 		FBDE86E519F82297001C18A8 /* UIAppView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAppView.m; sourceTree = "<group>"; };
-		FBFCB32E1B50B29400089F8A /* Host+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Host+CoreDataProperties.h"; path = "Database/Host+CoreDataProperties.h"; sourceTree = "<group>"; };
-		FBFCB32F1B50B29400089F8A /* Host.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Host.h; path = Database/Host.h; sourceTree = "<group>"; };
-		FBFCB3301B50B29400089F8A /* Host.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Host.m; path = Database/Host.m; sourceTree = "<group>"; };
-		FBFCB3321B50B29400089F8A /* App+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "App+CoreDataProperties.h"; path = "Database/App+CoreDataProperties.h"; sourceTree = "<group>"; };
-		FBFCB3331B50B29400089F8A /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = App.h; path = Database/App.h; sourceTree = "<group>"; };
-		FBFCB3341B50B29400089F8A /* App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = App.m; path = Database/App.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -770,12 +770,10 @@
 			children = (
 				D43E02061CBC9F1A00A30D30 /* Settings+CoreDataProperties.swift */,
 				D43E02071CBC9F1A00A30D30 /* Settings.swift */,
-				FBFCB3321B50B29400089F8A /* App+CoreDataProperties.h */,
-				FBFCB3331B50B29400089F8A /* App.h */,
-				FBFCB3341B50B29400089F8A /* App.m */,
-				FBFCB32E1B50B29400089F8A /* Host+CoreDataProperties.h */,
-				FBFCB32F1B50B29400089F8A /* Host.h */,
-				FBFCB3301B50B29400089F8A /* Host.m */,
+				D4E457511CBD17F4005572BD /* App+CoreDataProperties.swift */,
+				D4E457521CBD17F4005572BD /* App.swift */,
+				D4E457551CBD186B005572BD /* Host+CoreDataProperties.swift */,
+				D4E457561CBD186B005572BD /* Host.swift */,
 				FBD349601A0089F6002D2A60 /* DataManager.h */,
 				FBD349611A0089F6002D2A60 /* DataManager.m */,
 				9832D1341BBCD5C50036EF48 /* TemporaryApp.h */,
@@ -925,6 +923,7 @@
 				FB290D0719B2C406004C83CF /* Limelight.xcdatamodeld in Sources */,
 				FB89463219F646E200339C8A /* VideoDecoderRenderer.m in Sources */,
 				FB290D0419B2C406004C83CF /* AppDelegate.m in Sources */,
+				D4E457571CBD186B005572BD /* Host+CoreDataProperties.swift in Sources */,
 				FB9AFD401A7E127D00872C98 /* AppListResponse.m in Sources */,
 				FB89463419F646E200339C8A /* Utils.m in Sources */,
 				FBDE86E619F82297001C18A8 /* UIAppView.m in Sources */,
@@ -937,12 +936,12 @@
 				FB9AFD281A7C84ED00872C98 /* HttpResponse.m in Sources */,
 				FBDE86E019F7A837001C18A8 /* UIComputerView.m in Sources */,
 				FB89463019F646E200339C8A /* StreamConfiguration.m in Sources */,
-				FBFCB3311B50B29400089F8A /* Host.m in Sources */,
 				FBD3495319FF36FB002D2A60 /* SWRevealViewController.m in Sources */,
 				FB1D59971BBCCB6400F482CA /* ComputerScrollView.m in Sources */,
 				FBD3495019FF2174002D2A60 /* SettingsViewController.m in Sources */,
 				FB89462C19F646E200339C8A /* HttpManager.m in Sources */,
 				FB89462D19F646E200339C8A /* MDNSManager.m in Sources */,
+				D4E457541CBD17F4005572BD /* App.swift in Sources */,
 				FB89462B19F646E200339C8A /* StreamView.m in Sources */,
 				FB4678FA1A55FFAD00377732 /* DiscoveryManager.m in Sources */,
 				98D5856D1C0EA79600F6CC00 /* TemporaryHost.m in Sources */,
@@ -951,9 +950,11 @@
 				FB1D599A1BBCCD7E00F482CA /* AppCollectionView.m in Sources */,
 				FB89463619F646E200339C8A /* StreamFrameViewController.m in Sources */,
 				9832D1361BBCD5C50036EF48 /* TemporaryApp.m in Sources */,
+				D4E457581CBD186B005572BD /* Host.swift in Sources */,
 				98D585701C0ED0E800F6CC00 /* TemporarySettings.m in Sources */,
 				FB89462819F646E200339C8A /* CryptoManager.m in Sources */,
 				FB89462E19F646E200339C8A /* PairManager.m in Sources */,
+				D4E457531CBD17F4005572BD /* App+CoreDataProperties.swift in Sources */,
 				FB9AFD371A7E02DB00872C98 /* HttpRequest.m in Sources */,
 				FB4678ED1A50C40900377732 /* OnScreenControls.m in Sources */,
 				D43E02081CBC9F1A00A30D30 /* Settings+CoreDataProperties.swift in Sources */,
@@ -964,7 +965,6 @@
 				FB9AFD3D1A7E111600872C98 /* AppAssetResponse.m in Sources */,
 				FBD349621A0089F6002D2A60 /* DataManager.m in Sources */,
 				D4746EEC1CBC740C006FB401 /* Controller.swift in Sources */,
-				FBFCB3351B50B29400089F8A /* App.m in Sources */,
 				FB4A23B81A9D3637004D2EF2 /* LoadingFrameViewController.m in Sources */,
 				FB9AFD3A1A7E05CE00872C98 /* ServerInfoResponse.m in Sources */,
 				FB89463119F646E200339C8A /* StreamManager.m in Sources */,

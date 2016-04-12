@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "TemporaryHost.h"
-#import "App.h"
+
+// Swift
+#import "Moonlight-Swift.h"
+@class App;
 
 @interface TemporaryApp : NSObject
 

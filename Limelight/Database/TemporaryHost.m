@@ -8,9 +8,12 @@
 
 #import "DataManager.h"
 #import "TemporaryHost.h"
-#import "Host.h"
 #import "TemporaryApp.h"
-#import "App.h"
+
+// Swift
+#import "Moonlight-Swift.h"
+@class App;
+@class Host;
 
 @implementation TemporaryHost
 
