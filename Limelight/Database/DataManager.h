@@ -10,7 +10,10 @@
 #import "AppDelegate.h"
 #import "TemporaryHost.h"
 #import "TemporaryApp.h"
-#import "TemporarySettings.h"
+
+// Swift
+#import "Moonlight-Swift.h"
+@class TemporarySettings;
 
 @interface DataManager : NSObject
 

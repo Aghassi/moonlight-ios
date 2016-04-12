@@ -17,7 +17,6 @@
 #import "UIAppView.h"
 #import "SettingsViewController.h"
 #import "DataManager.h"
-#import "TemporarySettings.h"
 #import "WakeOnLanManager.h"
 #import "AppListResponse.h"
 #import "ServerInfoResponse.h"
@@ -26,6 +25,10 @@
 #import "ComputerScrollView.h"
 #import "TemporaryApp.h"
 #import "IdManager.h"
+
+// Swift
+#import "Moonlight-Swift.h"
+@class TemporarySettings;
 
 @implementation MainFrameViewController {
     NSOperationQueue* _opQueue;

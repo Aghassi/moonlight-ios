@@ -7,8 +7,11 @@
 //
 
 #import "SettingsViewController.h"
-#import "TemporarySettings.h"
 #import "DataManager.h"
+
+// Swift
+#import "Moonlight-Swift.h"
+@class TemporarySettings;
 
 #define BITRATE_INTERVAL 500 // in kbps
 

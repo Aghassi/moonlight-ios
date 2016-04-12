@@ -10,7 +10,6 @@
 		9832D1361BBCD5C50036EF48 /* TemporaryApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 9832D1351BBCD5C50036EF48 /* TemporaryApp.m */; };
 		98CFB82F1CAD481B0048EF74 /* libmoonlight-common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98AB2E841CAD46840089BB98 /* libmoonlight-common.a */; };
 		98D5856D1C0EA79600F6CC00 /* TemporaryHost.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D5856C1C0EA79600F6CC00 /* TemporaryHost.m */; };
-		98D585701C0ED0E800F6CC00 /* TemporarySettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D5856F1C0ED0E800F6CC00 /* TemporarySettings.m */; };
 		9E5D600B1A5A5A3900689918 /* Apache License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E5D5FF81A5A5A3900689918 /* Apache License.txt */; };
 		9E5D600C1A5A5A3900689918 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E5D5FF91A5A5A3900689918 /* Roboto-Black.ttf */; };
 		9E5D600E1A5A5A3900689918 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E5D5FFB1A5A5A3900689918 /* Roboto-Bold.ttf */; };
@@ -114,8 +113,6 @@
 		98AB2E7F1CAD46830089BB98 /* moonlight-common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "moonlight-common.xcodeproj"; path = "moonlight-common/moonlight-common.xcodeproj"; sourceTree = "<group>"; };
 		98D5856B1C0EA79600F6CC00 /* TemporaryHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TemporaryHost.h; path = Database/TemporaryHost.h; sourceTree = "<group>"; };
 		98D5856C1C0EA79600F6CC00 /* TemporaryHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TemporaryHost.m; path = Database/TemporaryHost.m; sourceTree = "<group>"; };
-		98D5856E1C0ED0E800F6CC00 /* TemporarySettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TemporarySettings.h; path = Database/TemporarySettings.h; sourceTree = "<group>"; };
-		98D5856F1C0ED0E800F6CC00 /* TemporarySettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TemporarySettings.m; path = Database/TemporarySettings.m; sourceTree = "<group>"; };
 		9E5D5FF81A5A5A3900689918 /* Apache License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Apache License.txt"; sourceTree = "<group>"; };
 		9E5D5FF91A5A5A3900689918 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		9E5D5FFB1A5A5A3900689918 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
@@ -783,8 +780,6 @@
 				98D5856B1C0EA79600F6CC00 /* TemporaryHost.h */,
 				98D5856C1C0EA79600F6CC00 /* TemporaryHost.m */,
 				D4E457591CBD1BE8005572BD /* TemporarySettings.swift */,
-				98D5856E1C0ED0E800F6CC00 /* TemporarySettings.h */,
-				98D5856F1C0ED0E800F6CC00 /* TemporarySettings.m */,
 			);
 			name = Database;
 			sourceTree = "<group>";
@@ -843,7 +838,7 @@
 						TestTargetID = FB290CED19B2C406004C83CF;
 					};
 					FB290CED19B2C406004C83CF = {
-						DevelopmentTeam = DM46QST4M7;
+						DevelopmentTeam = 23254ZGZ6N;
 					};
 				};
 			};
@@ -955,7 +950,6 @@
 				FB89463619F646E200339C8A /* StreamFrameViewController.m in Sources */,
 				9832D1361BBCD5C50036EF48 /* TemporaryApp.m in Sources */,
 				D4E457581CBD186B005572BD /* Host.swift in Sources */,
-				98D585701C0ED0E800F6CC00 /* TemporarySettings.m in Sources */,
 				FB89462819F646E200339C8A /* CryptoManager.m in Sources */,
 				FB89462E19F646E200339C8A /* PairManager.m in Sources */,
 				D4E457531CBD17F4005572BD /* App+CoreDataProperties.swift in Sources */,

@@ -8,11 +8,11 @@
 
 #import "DataManager.h"
 #import "TemporaryApp.h"
-#import "TemporarySettings.h"
 
 // Swift
 #import "Moonlight-Swift.h"
 @class Settings;
+@class TemporarySettings;
 
 @implementation DataManager {
     NSManagedObjectContext *_managedObjectContext;
